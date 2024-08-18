@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Night My Flower</title>
+    <style>
+        body {
+            /* Centraliza o conteúdo na tela */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* A tela ocupará toda a altura da janela do navegador */
+            height: 100vh;
+            /* Remove margens padrão */
+            margin: 0;
+            /* Define a cor de fundo da página como preta */
+            background-color: black;
+        }
+        .blinking-text {
+            /* Define o tamanho da fonte do texto */
+            font-size: 3em;
+            /* Define a cor do texto como branca */
+            color: white;
+            /* Centraliza o texto */
+            text-align: center;
+            /* Aplica a animação de piscar */
+            animation: blink 1s infinite;
+        }
+        .heart {
+            /* Define a cor do coração como vermelha */
+            color: red;
+        }
+        @keyframes blink {
+            /* A animação faz o texto desaparecer e reaparecer */
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Este é o texto que será exibido na tela -->
+    <div class="blinking-text">Good Night My Flower <span class="heart">❤️</span></div>
+</body>
+</html>
